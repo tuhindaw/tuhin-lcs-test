@@ -1,8 +1,8 @@
 #GIT URL
-git@github.com:tuhindaw/tuhin-lcs-test.git
+https://github.com/tuhindaw/tuhin-lcs-test.git
 
 Clone the project using below command
-git clone git@github.com:tuhindaw/tuhin-lcs-test.git
+git clone https://github.com/tuhindaw/tuhin-lcs-test.git
 
 #Spring boot JAR
 This is a Spring Boot JAR (2.3.3.RELEASE) project that tests the endpoint of actual spring boot server application(git@github.com:tuhindaw/tuhin-projects.git) 
