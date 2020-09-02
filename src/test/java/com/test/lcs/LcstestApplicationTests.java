@@ -47,7 +47,7 @@ class LcstestApplicationTests {
 	}
 
 	@Test
-	public void whenSendPostRequestWithDuplicatwStrings_thenReturnBadRequest()
+	public void whenSendPostRequestWithDuplicateStrings_thenReturnBadRequest()
 			throws ClientProtocolException, IOException {
 		CloseableHttpClient client = HttpClients.createDefault();
 		HttpPost httpPost = new HttpPost(URL);
