@@ -65,4 +65,23 @@ class LcstestApplicationTests {
 		client.close();
 	}
 
+	@Test
+	public void whenSendPostRequestWithoutInputString_thenReturnBadRequest()
+			throws ClientProtocolException, IOException {
+		CloseableHttpClient client = HttpClients.createDefault();
+		HttpPost httpPost = new HttpPost(URL);
+
+		String json = "{\"setOfStrings\":[]}";
+		StringEntity entity = new StringEntity(json);
+		httpPost.setEntity(entity);
+		httpPost.setHeader("Accept", "application/json");
+		httpPost.setHeader("Content-type", "application/json");
+
+		CloseableHttpResponse response = client.execute(httpPost);
+
+		Assertions.assertEquals(HttpStatus.SC_BAD_REQUEST,response.getStatusLine().getStatusCode());
+
+		client.close();
+	}
+
 }
