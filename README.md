@@ -20,4 +20,8 @@ This being a simple JAR application, can be executed just by below build command
      Step1 : Make sure the spring boot server application is running. If not, run the application first. Then execute below
     ./gradlew build -> to build project
 
+Or, can be executed the test class directly by executing the below command
+    ./gradlew -Dtest.single=LcstestApplicationTests test
+  
+
 

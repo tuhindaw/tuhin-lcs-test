@@ -21,10 +21,6 @@ import java.io.IOException;
 @SpringBootTest
 class LcstestApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
 	private static final String URL = "http://localhost:8080/api/substring/lcs";
 
 	@Test
